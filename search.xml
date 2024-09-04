@@ -249,4 +249,64 @@
         <tag>hexo博客搭建之Git</tag>
       </tags>
   </entry>
+  <entry>
+    <title>Windows系统上Nodejs安装及环境配置图文教程</title>
+    <url>/2024/09/04/Windows%E7%B3%BB%E7%BB%9F%E4%B8%8ANodeJS%E5%AE%89%E8%A3%85%E5%8F%8A%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/</url>
+    <content><![CDATA[<p>Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行环境，允许在服务器端运行 JavaScript 代码。它采用事件驱动、非阻塞 I&#x2F;O 模型，非常适合构建高性能的网络应用程序。Node.js 提供了一系列内置模块，支持异步编程，易于扩展，广泛应用于 Web 开发、实时应用和各种服务端开发场景。</p>
+<h2 id="安装环境"><a href="#安装环境" class="headerlink" title="安装环境"></a>安装环境</h2><p>本机是Windows 10 专业版，此教程适用于Windows10， Windows11各版本。</p>
+<h2 id="Node-js的安装"><a href="#Node-js的安装" class="headerlink" title="Node.js的安装"></a>Node.js的安装</h2><h3 id="Node-js下载"><a href="#Node-js下载" class="headerlink" title="Node.js下载"></a>Node.js下载</h3><h4 id="下载最新版"><a href="#下载最新版" class="headerlink" title="下载最新版"></a>下载最新版</h4><p>进入<a href="https://nodejs.org/en/download/">官网</a>下载Node.js。</p>
+<p><img src="/../img/Windows%E7%B3%BB%E7%BB%9F%E4%B8%8ANodejs%E5%AE%89%E8%A3%85%E5%8F%8A%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/3031a9eedd392074ce87156b34ef533f.png" alt="3031a9eedd392074ce87156b34ef533f"></p>
+<p>本文下载发文之时最新的版本：<code>node-v20.15.1-x64.msi</code></p>
+<h4 id="下载特定版本"><a href="#下载特定版本" class="headerlink" title="下载特定版本"></a>下载特定版本</h4><p>如果需要下载特定版本，则需要点击版本号的下拉框，在其中选择指定的版本进行下载</p>
+<p><img src="/../img/Windows%E7%B3%BB%E7%BB%9F%E4%B8%8ANodejs%E5%AE%89%E8%A3%85%E5%8F%8A%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/afa28cddcf88b6ee2b1c187b9cea36e3.png" alt="afa28cddcf88b6ee2b1c187b9cea36e3"></p>
+<h3 id="Node-js安装"><a href="#Node-js安装" class="headerlink" title="Node.js安装"></a>Node.js安装</h3><h4 id="安装向导"><a href="#安装向导" class="headerlink" title="安装向导"></a>安装向导</h4><p>点击<code>Next</code>进入下一步。</p>
+<p><img src="/../img/Windows%E7%B3%BB%E7%BB%9F%E4%B8%8ANodejs%E5%AE%89%E8%A3%85%E5%8F%8A%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/477296a3533c52c28b66ff3cebc07c10.png" alt="477296a3533c52c28b66ff3cebc07c10"></p>
+<h4 id="使用许可说明"><a href="#使用许可说明" class="headerlink" title="使用许可说明"></a>使用许可说明</h4><p>勾选<code>I accept the terms in the License Agreement</code>勾选框，点击<code>Next</code>进入下一步。</p>
+<p><img src="/../img/Windows%E7%B3%BB%E7%BB%9F%E4%B8%8ANodejs%E5%AE%89%E8%A3%85%E5%8F%8A%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/2f3116f51e008520612336c1593f97a7.png" alt="2f3116f51e008520612336c1593f97a7"></p>
+<h4 id="选择安装目录"><a href="#选择安装目录" class="headerlink" title="选择安装目录"></a>选择安装目录</h4><p>最好点击 “Change…” 更换目录，<strong>尽量不要安装在C盘</strong>。点击 <code>Next</code> 进入下一步。</p>
+<p><img src="/../img/Windows%E7%B3%BB%E7%BB%9F%E4%B8%8ANodejs%E5%AE%89%E8%A3%85%E5%8F%8A%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/365a821c60c97718ca08af19c36d6f1b.png" alt="365a821c60c97718ca08af19c36d6f1b"></p>
+<h4 id="自定义安装"><a href="#自定义安装" class="headerlink" title="自定义安装"></a>自定义安装</h4><p><strong>使用默认配置</strong>，点击<code>Next</code>进入下一步。</p>
+<p><img src="/../img/Windows%E7%B3%BB%E7%BB%9F%E4%B8%8ANodejs%E5%AE%89%E8%A3%85%E5%8F%8A%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/92b57ebc739cda0b6e01a3207be86b3c.png" alt="92b57ebc739cda0b6e01a3207be86b3c"></p>
+<h4 id="工具安装"><a href="#工具安装" class="headerlink" title="工具安装"></a>工具安装</h4><p><strong>使用默认配置</strong>，点击<code>Next</code>进入下一步。</p>
+<p><img src="/../img/Windows%E7%B3%BB%E7%BB%9F%E4%B8%8ANodejs%E5%AE%89%E8%A3%85%E5%8F%8A%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/d954ac64d1f526494b4975d389c27329.png" alt="d954ac64d1f526494b4975d389c27329"></p>
+<h4 id="执行安装"><a href="#执行安装" class="headerlink" title="执行安装"></a>执行安装</h4><p>点击<code>Install</code>执行安装。</p>
+<p><img src="/../img/Windows%E7%B3%BB%E7%BB%9F%E4%B8%8ANodejs%E5%AE%89%E8%A3%85%E5%8F%8A%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/5eb00a5dca17a13e4c4b72bce2f921f0.png" alt="5eb00a5dca17a13e4c4b72bce2f921f0"></p>
+<h4 id="安装完成"><a href="#安装完成" class="headerlink" title="安装完成"></a>安装完成</h4><p><img src="/../img/Windows%E7%B3%BB%E7%BB%9F%E4%B8%8ANodejs%E5%AE%89%E8%A3%85%E5%8F%8A%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/6cfd08d8f8ecd86693ddf498c5bd8f2e.png" alt="6cfd08d8f8ecd86693ddf498c5bd8f2e"></p>
+<p>至此，Node.js已经完成安装。可以打开命令行测试是否安装成功，之后还需要进行环境配置。</p>
+<h3 id="Node-js测试"><a href="#Node-js测试" class="headerlink" title="Node.js测试"></a>Node.js测试</h3><p>在键盘按下<code>Win</code> + <code>R</code>快捷键，输入<code>cmd</code>，然后回车启动命令行窗口。分别输入<code>node -v</code>和<code>npm -v</code>来查看node.js版本和npm版本。</p>
+<blockquote>
+<p>[!NOTE]</p>
+<p>新版的Node.js已自带npm，安装Node.js时会一起安装，npm的作用就是对Node.js依赖的包进行管理，也可以理解为用来安装&#x2F;卸载Node.js需要装的东西</p>
+</blockquote>
+<p><img src="/../img/Windows%E7%B3%BB%E7%BB%9F%E4%B8%8ANodejs%E5%AE%89%E8%A3%85%E5%8F%8A%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/39e9533fd41c2b66e30ee4da8dc7ff18.png" alt="39e9533fd41c2b66e30ee4da8dc7ff18"></p>
+<h3 id="Node-js安装目录"><a href="#Node-js安装目录" class="headerlink" title="Node.js安装目录"></a>Node.js安装目录</h3><p>安装完成之后，在开始菜单里能够看到如下列表。</p>
+<p><img src="/../img/Windows%E7%B3%BB%E7%BB%9F%E4%B8%8ANodejs%E5%AE%89%E8%A3%85%E5%8F%8A%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/4911dc9a905a939b6c1f90ac8aa60f37.png" alt="4911dc9a905a939b6c1f90ac8aa60f37"></p>
+<h2 id="Node-js环境配置"><a href="#Node-js环境配置" class="headerlink" title="Node.js环境配置"></a>Node.js环境配置</h2><p>Node.js安装包自带了npm，但安装时不会自动给npm配置全局安装包路径的环境变量（不配的话运行js程序时可能会报找不到包的错误）。</p>
+<ol>
+<li><p>打开Node.js的安装目录</p>
+</li>
+<li><p>在该目录中新增**node_global 和 node_cache **文件夹<img src="/../img/Windows%E7%B3%BB%E7%BB%9F%E4%B8%8ANodejs%E5%AE%89%E8%A3%85%E5%8F%8A%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/9675b60ab17963a25c71e0f15615224c.png" alt="9675b60ab17963a25c71e0f15615224c"></p>
+</li>
+<li><p>文件夹创建完成之后，打开cmd窗口，输入以下命令。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm config set prefix &quot;&#123;Node.js安装目录&#125;\node_global&quot;</span><br><span class="line">npm config set cache &quot;&#123;Node.js安装目录&#125;\node_cache&quot;</span><br></pre></td></tr></table></figure>
+
+
+</li>
+<li><p>鼠标点击右键选择<code>属性</code>，在弹出的界面中依次选择<code>高级系统设置</code>、<code>高级</code>、<code>环境变量</code>打开环境变量设置界面。<img src="/../img/Windows%E7%B3%BB%E7%BB%9F%E4%B8%8ANodejs%E5%AE%89%E8%A3%85%E5%8F%8A%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/a04cb403f001b2e56838942d5105fba3.png" alt="a04cb403f001b2e56838942d5105fba3"></p>
+</li>
+<li><p>相关配置</p>
+<p>输入以下配置之后，点击<code>确定</code>按钮进行保存。</p>
+</li>
+</ol>
+<p><strong>用户变量 path ：C:\Program Files\nodejs\node_global<br>系统变量 NODE_PATH ：C:\Program Files\nodejs\node_global\node_modules</strong></p>
+<p><img src="/../img/Windows%E7%B3%BB%E7%BB%9F%E4%B8%8ANodejs%E5%AE%89%E8%A3%85%E5%8F%8A%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/40cec6a605de3f890e9f33e17b274b55.png" alt="40cec6a605de3f890e9f33e17b274b55"></p>
+<p>至此，Node.js已经安装和配置完成。</p>
+]]></content>
+      <categories>
+        <category>Nodejs</category>
+      </categories>
+      <tags>
+        <tag>hexo博客搭建之Nodejs</tag>
+      </tags>
+  </entry>
 </search>
