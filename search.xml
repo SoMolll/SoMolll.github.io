@@ -241,8 +241,6 @@
 <p>给当前提交打上标签，通常用于版本发布。</p>
 <p>这些命令和操作步骤是 Git 使用中的基础，掌握它们可以帮助你更有效地进行版本控制。</p>
 <p>Git 拥有一个庞大的命令集，这些命令覆盖了从基础到高级的多种使用场景。在开始使用 Git 之前，建议您先学习一些基础的版本控制概念。通过不断的实践和探索，您将逐步深入了解 Git 的强大功能。Git 的真正魅力在于它的灵活性和丰富功能，它能够适应各种复杂的开发环境和工作流程。</p>
-<p>另外，对以下内容感兴趣的同学请移步对应教程：</p>
-<p><a href="https://0ks.cn/subscribe-chatgpt-plus-in-five-minutes/">GPT-4o教程</a><br><a href="https://0ks.cn/peo-register-guide/">Poe教程</a><br><a href="https://0ks.cn/fantia-register-guide/">Fantia注册指南</a></p>
 ]]></content>
       <categories>
         <category>Git</category>
