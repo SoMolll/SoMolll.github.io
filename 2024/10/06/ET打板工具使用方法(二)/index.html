@@ -1,0 +1,538 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>ET打板工具使用方法(二) | 清风</title><meta name="author" content="听风吟"><meta name="copyright" content="听风吟"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="序号 图标 名称 使用方法    1  端移动 框选（或点选）移动端，右键结束，把移动点移到目标点（按CTRL键可以复制）,分“端移动局部”和“整体“移动，”局部移动“指的是只移动端点与它最近一点之间的线，而”整体移动“则是指整条线都移动。   2  平行线 先选择参考线，输入对应的平行距离和线数，在指定的方向上点击左键。   3  角度线 选择参考要素，输入长度和角度，左键分别点击角度线起">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ET打板工具使用方法(二)">
+<meta property="og:url" content="http://somolll.github.io/2024/10/06/ET%E6%89%93%E6%9D%BF%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95(%E4%BA%8C)/index.html">
+<meta property="og:site_name" content="清风">
+<meta property="og:description" content="序号 图标 名称 使用方法    1  端移动 框选（或点选）移动端，右键结束，把移动点移到目标点（按CTRL键可以复制）,分“端移动局部”和“整体“移动，”局部移动“指的是只移动端点与它最近一点之间的线，而”整体移动“则是指整条线都移动。   2  平行线 先选择参考线，输入对应的平行距离和线数，在指定的方向上点击左键。   3  角度线 选择参考要素，输入长度和角度，左键分别点击角度线起">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://somolll.github.io/img/avatar.jpg">
+<meta property="article:published_time" content="2024-10-06T03:53:22.000Z">
+<meta property="article:modified_time" content="2024-10-06T04:07:24.179Z">
+<meta property="article:author" content="听风吟">
+<meta property="article:tag" content="服装制版">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://somolll.github.io/img/avatar.jpg"><link rel="shortcut icon" href="/img/somolll.png"><link rel="canonical" href="http://somolll.github.io/2024/10/06/ET%E6%89%93%E6%9D%BF%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95(%E4%BA%8C)/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: true
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'ET打板工具使用方法(二)',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2024-10-06 12:07:24'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">7</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">4</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background: transparent"><nav id="nav"><span id="blog-info"><a href="/" title="清风"><img class="site-icon" src="/img/somolll.png"/><span class="site-name">清风</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">ET打板工具使用方法(二)</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-10-06T03:53:22.000Z" title="发表于 2024-10-06 11:53:22">2024-10-06</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-10-06T04:07:24.179Z" title="更新于 2024-10-06 12:07:24">2024-10-06</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/ET%E6%89%93%E7%89%88%E6%95%99%E7%A8%8B/">ET打版教程</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">2.6k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>7分钟</span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><table>
+<thead>
+<tr>
+<th align="center">序号</th>
+<th align="center">图标</th>
+<th align="center">名称</th>
+<th align="left">使用方法</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">1</td>
+<td align="center"><img src="/../img/ET%E6%89%93%E6%9D%BF%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95(%E4%BA%8C)/image-20240821200709512.jpg" alt="image-20240821200709512"></td>
+<td align="center">端移动</td>
+<td align="left">框选（或点选）移动端，右键结束，把移动点移到目标点（按CTRL键可以复制）,分“端移动局部”和“整体“移动，”局部移动“指的是只移动端点与它最近一点之间的线，而”整体移动“则是指整条线都移动。</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center"><img src="/../img/ET%E6%89%93%E6%9D%BF%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95(%E4%BA%8C)/image-20240821200724619.png" alt="image-20240821200724619"></td>
+<td align="center">平行线</td>
+<td align="left">先选择参考线，输入对应的平行距离和线数，在指定的方向上点击左键。</td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center"><img src="/../img/ET%E6%89%93%E6%9D%BF%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95(%E4%BA%8C)/image-20240821200903263.png" alt="image-20240821200903263"></td>
+<td align="center">角度线</td>
+<td align="left">选择参考要素，输入长度和角度，左键分别点击角度线起点和终点，左键结束。</td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="center"><img src="/../img/ET%E6%89%93%E6%9D%BF%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95(%E4%BA%8C)/image-20240821201323849.png" alt="image-20240821201323849"></td>
+<td align="center">双圆规</td>
+<td align="left">点击目标点1和目标点2，然后选择合适的位置和方向，按左键确认。</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center"><img src="/../img/ET%E6%89%93%E6%9D%BF%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95(%E4%BA%8C)/image-20240821201333913.png" alt="image-20240821201333913"></td>
+<td align="center">单圆规</td>
+<td align="left">输入半径，左键点击起点，选择目标要素。</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center"><img src="/../img/ET%E6%89%93%E6%9D%BF%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95(%E4%BA%8C)/image-20240821201342785.png" alt="image-20240821201342785"></td>
+<td align="center">扣子</td>
+<td align="left">先输入数值，左键点击扣子的起点和终点，右键生成基线。绿色显示时可修改数值，点左键进行预览，右键结束。可做“等距”和“非等距”两类扣子</td>
+</tr>
+<tr>
+<td align="center">7</td>
+<td align="center"><img src="/../img/ET%E6%89%93%E6%9D%BF%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95(%E4%BA%8C)/image-20240821201355596.png" alt="image-20240821201355596"></td>
+<td align="center">扣眼</td>
+<td align="left">先输入数值，左键点击扣眼的起点和终点，右键生成基线。左键指示扣偏侧方向，绿色显示时可修改数值，点左键进行预览，（按CTRL键生成纵扣眼）右键结束。也可做“等距”和“非等距”两类扣眼</td>
+</tr>
+<tr>
+<td align="center">8</td>
+<td align="center"><img src="/../img/ET%E6%89%93%E6%9D%BF%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95(%E4%BA%8C)/image-20240821204219242.png" alt="image-20240821204219242"></td>
+<td align="center">单向省</td>
+<td align="left">先输入省量，左键框选或点选省尖位置，左键确定省线方向。</td>
+</tr>
+<tr>
+<td align="center">9</td>
+<td align="center"><img src="/../img/ET%E6%89%93%E6%9D%BF%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95(%E4%BA%8C)/image-20240821204233608.png" alt="image-20240821204233608"></td>
+<td align="center">枣弧省</td>
+<td align="left">左键指示省的中心点，在对话框内输入所需数值。按“确定”结束。</td>
+</tr>
+<tr>
+<td align="center">10</td>
+<td align="center"><img src="/../img/ET%E6%89%93%E6%9D%BF%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95(%E4%BA%8C)/image-20240821204245047.png" alt="image-20240821204245047"></td>
+<td align="center">省道</td>
+<td align="left">法向省：先输入省长和省量，按住左键拖动做出省中心线斜省：先输入省量，点选做省线，再点选省中心线。</td>
+</tr>
+<tr>
+<td align="center">11</td>
+<td align="center"><img src="/../img/ET%E6%89%93%E6%9D%BF%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95(%E4%BA%8C)/image-20240821204301420.png" alt="image-20240821204301420"></td>
+<td align="center">省折线</td>
+<td align="left">左键框选四条省线，移动鼠标选择省的倒向侧，也可自定义省深度，点左键确定。</td>
+</tr>
+<tr>
+<td align="center">12</td>
+<td align="center"><img src="/../img/ET%E6%89%93%E6%9D%BF%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95(%E4%BA%8C)/image-20240821204315064.png" alt="image-20240821204315064"></td>
+<td align="center">转省</td>
+<td align="left">选择所有参与转省要素，按右键结束，然后选择闭合前省线，再选择闭合后省线，最后选择新的省线，按右键结束。（若做等分转省，则在“等分数”框里输入数值即可）</td>
+</tr>
+<tr>
+<td align="center">13</td>
+<td align="center"><img src="/../img/ET%E6%89%93%E6%9D%BF%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95(%E4%BA%8C)/image-20240821204325359.png" alt="image-20240821204325359"></td>
+<td align="center">接角圆顺</td>
+<td align="left">首选确定被圆顺要素是否需要合并，依次选择被圆顺要素，按右键结束要素选择，依次点选缝合要素的起点端，按右键结束；调整圆顺曲线，按右键结束曲线调整。</td>
+</tr>
+<tr>
+<td align="center">14</td>
+<td align="center"><img src="/../img/ET%E6%89%93%E6%9D%BF%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95(%E4%BA%8C)/image-20240821204337858.png" alt="image-20240821204337858"></td>
+<td align="center">点打断</td>
+<td align="left">左键点选要打断的线，左键点选要打断的位置，可在点输入框中输入数值。</td>
+</tr>
+<tr>
+<td align="center">15</td>
+<td align="center"><img src="/../img/ET%E6%89%93%E6%9D%BF%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95(%E4%BA%8C)/image-20240821204346574.png" alt="image-20240821204346574"></td>
+<td align="center">要素打断</td>
+<td align="left">选择被打断要素，按右键结束（按SHIFT键可进行相互打断），左键点选打断要素即可。</td>
+</tr>
+<tr>
+<td align="center">16</td>
+<td align="center"><img src="/../img/ET%E6%89%93%E6%9D%BF%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95(%E4%BA%8C)/image-20240821204400714.png" alt="image-20240821204400714"></td>
+<td align="center">要素合并</td>
+<td align="left">先输入要素合并后的点数，选择合并要素，右键结束。</td>
+</tr>
+<tr>
+<td align="center">17</td>
+<td align="center"><img src="/../img/ET%E6%89%93%E6%9D%BF%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95(%E4%BA%8C)/image-20240821204412282.png" alt="image-20240821204412282"></td>
+<td align="center">要素属性设置</td>
+<td align="left">选择目标要素，按右键结束要素选择。（包括：辅助线，对称线，全切线，不对称，虚线，不输出，半切线，剪切线，清除，不推线，内环线）</td>
+</tr>
+<tr>
+<td align="center">18</td>
+<td align="center"><img src="/../img/ET%E6%89%93%E6%9D%BF%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95(%E4%BA%8C)/image-20240821204420435.png" alt="image-20240821204420435"></td>
+<td align="center">形状对接及复制</td>
+<td align="left">选择对接要素，按右键结束选择，再指定对接前起点，指定对接前终点，指定对接后起点，指定对接后终点，按住CTRL可进行复制。</td>
+</tr>
+<tr>
+<td align="center">19</td>
+<td align="center"><img src="/../img/ET%E6%89%93%E6%9D%BF%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95(%E4%BA%8C)/image-20240821204430718.png" alt="image-20240821204430718"></td>
+<td align="center">纸形剪开及复制</td>
+<td align="left">选择所有被剪开要素，按右键结束选择，选择剪开要素，按右键结束选择，在移动侧拖动鼠标到指定位置，按CTRL可以复制。</td>
+</tr>
+<tr>
+<td align="center">20</td>
+<td align="center"><img src="/../img/ET%E6%89%93%E6%9D%BF%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95(%E4%BA%8C)/image-20240821204441007.png" alt="image-20240821204441007"></td>
+<td align="center">刀口</td>
+<td align="left">普通刀口：先在长度或比例处输入数值，框选要素起点端，右键结束。<br/>要素刀口：点选两要素，右键结束，如按CTRL可做反转要素刀口。</td>
+</tr>
+<tr>
+<td align="center">21</td>
+<td align="center"><img src="/../img/ET%E6%89%93%E6%9D%BF%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95(%E4%BA%8C)/image-20240821204449918.png" alt="image-20240821204449918"></td>
+<td align="center">袖对刀</td>
+<td align="left">依次选择前袖笼线，按右键结束选择；然后选择前袖山线，按右键结束；再选择后袖笼线，按右键结束选择；再选择后袖山线，按右键结束。最后把需要的数值填入对应的对话框内即可。</td>
+</tr>
+<tr>
+<td align="center">22</td>
+<td align="center"><img src="/../img/ET%E6%89%93%E6%9D%BF%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95(%E4%BA%8C)/image-20240821204503070.png" alt="image-20240821204503070"></td>
+<td align="center">刀口修改及删除</td>
+<td align="left">框选被修改刀口，输入新的刀口参数，按右键结束修改。（若要删除刀口，先框选刀口，按DELETE键即可）</td>
+</tr>
+<tr>
+<td align="center">23</td>
+<td align="center"><img src="/../img/ET%E6%89%93%E6%9D%BF%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95(%E4%BA%8C)/image-20240821204510999.png" alt="image-20240821204510999"></td>
+<td align="center">打孔</td>
+<td align="left">左键点选打孔的位置，可在点输入框中输入数值</td>
+</tr>
+<tr>
+<td align="center">24</td>
+<td align="center"><img src="/../img/ET%E6%89%93%E6%9D%BF%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95(%E4%BA%8C)/image-20240821204530983.png" alt="image-20240821204530983"></td>
+<td align="center">裁片属性定义</td>
+<td align="left">在目标裁片中画出纱向两点位置（第2点为纱向箭头方向），按住SHIFT＋左键可定义二级纱向，按右键可修改纱向，按SHIFT＋右键可选删除二级纱线</td>
+</tr>
+<tr>
+<td align="center">25</td>
+<td align="center"><img src="/../img/ET%E6%89%93%E6%9D%BF%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95(%E4%BA%8C)/image-20240821211059612.png" alt="image-20240821211059612"></td>
+<td align="center">缝边刷新</td>
+<td align="left">直接点击该工具，能把闭合图形变成裁片；如对净边进行修改，按该工具后，缝边会自动进行修改；可将要素线转为属于裁片的线</td>
+</tr>
+<tr>
+<td align="center">26</td>
+<td align="center"><img src="/../img/ET%E6%89%93%E6%9D%BF%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95(%E4%BA%8C)/image-20240821211113467.png" alt="image-20240821211113467"></td>
+<td align="center">自动加缝边</td>
+<td align="left">选输入缝边宽，左键框选一个或多个完整裁片，右键结束。</td>
+</tr>
+<tr>
+<td align="center">27</td>
+<td align="center"><img src="/../img/ET%E6%89%93%E6%9D%BF%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95(%E4%BA%8C)/image-20240821211120959.png" alt="image-20240821211120959"></td>
+<td align="center">修改缝边宽度</td>
+<td align="left">输入新的缝边宽，左键点选（或框选）要修改的净边，按右键结束。</td>
+</tr>
+<tr>
+<td align="center">28</td>
+<td align="center"><img src="/../img/ET%E6%89%93%E6%9D%BF%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95(%E4%BA%8C)/image-20240821211131811.png" alt="image-20240821211131811"></td>
+<td align="center">缝边角处理</td>
+<td align="left">延长角：点选单一要素，反转角：框选单一要素（按CTRL直线反转）；折叠角：框选成角的两条同片要素；直角：点选两条缝合要素；延长反转角：分别框选两条缝合要素；切角：先输入切量1和切量2的数值，按住SHIFT，分别框选两要素。</td>
+</tr>
+<tr>
+<td align="center">29</td>
+<td align="center"><img src="/../img/ET%E6%89%93%E6%9D%BF%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95(%E4%BA%8C)/image-20240821212356399.png" alt="image-20240821212356399"></td>
+<td align="center">删除缝边</td>
+<td align="left">选择目标裁片，按右键结束选择。</td>
+</tr>
+<tr>
+<td align="center">30</td>
+<td align="center"><img src="/../img/ET%E6%89%93%E6%9D%BF%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95(%E4%BA%8C)/image-20240821212403527.png" alt="image-20240821212403527"></td>
+<td align="center">缩水操作</td>
+<td align="left">先输入缩水量，左键框选或点选所需操作的裁片，按右键确认。（按SHIFT键进行单方向缩水）</td>
+</tr>
+<tr>
+<td align="center">31</td>
+<td align="center"><img src="/../img/ET%E6%89%93%E6%9D%BF%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95(%E4%BA%8C)/image-20240821212409954.png" alt="image-20240821212409954"></td>
+<td align="center">自动生成朴</td>
+<td align="left">选择朴基础边，按右键结束选择。然后选择放置位置，按左键放下。</td>
+</tr>
+<tr>
+<td align="center">32</td>
+<td align="center"><img src="/../img/ET%E6%89%93%E6%9D%BF%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95(%E4%BA%8C)/image-20240821212420534.png" alt="image-20240821212420534"></td>
+<td align="center">裁片拉伸</td>
+<td align="left">一次性框选参与操作的要素（左键可点选多余要素），右键结束。在对话框中输入移动量，点上、下、左、右键移动，按确定。</td>
+</tr>
+<tr>
+<td align="center">33</td>
+<td align="center"><img src="/../img/ET%E6%89%93%E6%9D%BF%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95(%E4%BA%8C)/image-20240821212430192.png" alt="image-20240821212430192"></td>
+<td align="center">两枚袖</td>
+<td align="left">选择前袖山线，再选择后袖山线，把数值输入对话框，按确定。</td>
+</tr>
+<tr>
+<td align="center">34</td>
+<td align="center"><img src="/../img/ET%E6%89%93%E6%9D%BF%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95(%E4%BA%8C)/image-20240821212435443.png" alt="image-20240821212435443"></td>
+<td align="center">等分线</td>
+<td align="left">首先输入等分数，左键指示等分线起点，然后指示终点。</td>
+</tr>
+<tr>
+<td align="center">35</td>
+<td align="center"><img src="/../img/ET%E6%89%93%E6%9D%BF%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95(%E4%BA%8C)/image-20240821212440921.png" alt="image-20240821212440921"></td>
+<td align="center">任意文字</td>
+<td align="left">指定文字标定位置和标注方向，并输入标注文字。</td>
+</tr>
+<tr>
+<td align="center">36</td>
+<td align="center"><img src="/../img/ET%E6%89%93%E6%9D%BF%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95(%E4%BA%8C)/image-20240821212445948.png" alt="image-20240821212445948"></td>
+<td align="center">皮尺测量</td>
+<td align="left">左键选择测量要素的起点端，按F8键可关闭皮尺显示。</td>
+</tr>
+<tr>
+<td align="center">37</td>
+<td align="center"><img src="/../img/ET%E6%89%93%E6%9D%BF%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95(%E4%BA%8C)/image-20240821212450827.png" alt="image-20240821212450827"></td>
+<td align="center">要素长度测量</td>
+<td align="left">选择被测量要素（如果为多条，则作求长度求和），按右键结束选择。</td>
+</tr>
+<tr>
+<td align="center">38</td>
+<td align="center"><img src="/../img/ET%E6%89%93%E6%9D%BF%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95(%E4%BA%8C)/image-20240821212505111.png" alt="image-20240821212505111"></td>
+<td align="center">两点测量</td>
+<td align="left">选择第一点，然后选择第二点即可。</td>
+</tr>
+<tr>
+<td align="center">39</td>
+<td align="center"><img src="/../img/ET%E6%89%93%E6%9D%BF%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95(%E4%BA%8C)/image-20240821212509999.png" alt="image-20240821212509999"></td>
+<td align="center">拼合检查</td>
+<td align="left">选择第一组目标要素，（CTRL＋右键：求和检查）右键结束。然后选择第二组目标要素，右键结束选择。</td>
+</tr>
+<tr>
+<td align="center">40</td>
+<td align="center"><img src="/../img/ET%E6%89%93%E6%9D%BF%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95(%E4%BA%8C)/image-20240821212518983.png" alt="image-20240821212518983"></td>
+<td align="center">要素上两点测量</td>
+<td align="left">选择目标要素，指定第一点，然后指定第二点即可。</td>
+</tr>
+<tr>
+<td align="center">41</td>
+<td align="center"><img src="/../img/ET%E6%89%93%E6%9D%BF%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95(%E4%BA%8C)/image-20240821212527919.png" alt="image-20240821212527919"></td>
+<td align="center">角度测量</td>
+<td align="left">指定两条目标要素即可。</td>
+</tr>
+<tr>
+<td align="center">42</td>
+<td align="center"><img src="/../img/ET%E6%89%93%E6%9D%BF%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95(%E4%BA%8C)/image-20240821212536643.png" alt="image-20240821212536643"></td>
+<td align="center">变更颜色</td>
+<td align="left">选择目标要素，右键结束选择。</td>
+</tr>
+<tr>
+<td align="center">43</td>
+<td align="center"><img src="/../img/ET%E6%89%93%E6%9D%BF%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95(%E4%BA%8C)/image-20240821212542263.png" alt="image-20240821212542263"></td>
+<td align="center">直角连接</td>
+<td align="left">输入直角连接起点，然后输入连接终点，左键确定直角连接方向。</td>
+</tr>
+<tr>
+<td align="center">44</td>
+<td align="center"><img src="/../img/ET%E6%89%93%E6%9D%BF%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95(%E4%BA%8C)/image-20240821212549856.png" alt="image-20240821212549856"></td>
+<td align="center">固定等分割</td>
+<td align="left">先输入分割量和等分数，框选参与分割的要素，右键结束。指示固定侧要素的起点端，指示展开侧要素的起点端，右键结束。（按CTRL键＋右键，可自动连接）</td>
+</tr>
+<tr>
+<td align="center">45</td>
+<td align="center"><img src="/../img/ET%E6%89%93%E6%9D%BF%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95(%E4%BA%8C)/image-20240821212556634.png" alt="image-20240821212556634"></td>
+<td align="center">指定分割</td>
+<td align="left">先输入分割量，框选参与分割的要素，按右键结束。点选固定侧要素，点选展开侧要素。从静止端依次选择分割线，右键结束。（按CTRL键＋右键，可自动连接）</td>
+</tr>
+<tr>
+<td align="center">46</td>
+<td align="center"><img src="/../img/ET%E6%89%93%E6%9D%BF%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95(%E4%BA%8C)/image-20240821212601911.png" alt="image-20240821212601911"></td>
+<td align="center">单边分割展开</td>
+<td align="left">先输入展开量，选择基线要素，按右键展开。</td>
+</tr>
+<tr>
+<td align="center">47</td>
+<td align="center"><img src="/../img/ET%E6%89%93%E6%9D%BF%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95(%E4%BA%8C)/image-20240821212606646.png" alt="image-20240821212606646"></td>
+<td align="center">多边分割展开</td>
+<td align="left">先输入分割量，框选参与展开的要素，按右键结束。左键选择基线，左键选择分割线，按右键结束。</td>
+</tr>
+<tr>
+<td align="center">48</td>
+<td align="center"><img src="/../img/ET%E6%89%93%E6%9D%BF%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95(%E4%BA%8C)/image-20240821212611111.png" alt="image-20240821212611111"></td>
+<td align="center">半径圆</td>
+<td align="left">输入半径，左键点击圆心位置即可。</td>
+</tr>
+<tr>
+<td align="center">49</td>
+<td align="center"><img src="/../img/ET%E6%89%93%E6%9D%BF%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95(%E4%BA%8C)/image-20240821212615123.png" alt="image-20240821212615123"></td>
+<td align="center">切线垂线</td>
+<td align="left">指定切线（或垂线）起点，指定切线圆或曲线，按SHIFT键可获得垂线。</td>
+</tr>
+<tr>
+<td align="center">50</td>
+<td align="center"><img src="/../img/ET%E6%89%93%E6%9D%BF%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95(%E4%BA%8C)/image-20240821212619439.png" alt="image-20240821212619439"></td>
+<td align="center">圆角处理</td>
+<td align="left">选择参与圆角处理的两条要素，可拖动鼠标指示圆角半径大小，也可输入圆角半径。</td>
+</tr>
+<tr>
+<td align="center">51</td>
+<td align="center"><img src="/../img/ET%E6%89%93%E6%9D%BF%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95(%E4%BA%8C)/image-20240821212624758.png" alt="image-20240821212624758"></td>
+<td align="center">曲线圆角处理</td>
+<td align="left">选择参与圆角处理的两条要素。可拖动鼠标获得理想的曲线连接。</td>
+</tr>
+<tr>
+<td align="center">52</td>
+<td align="center"><img src="/../img/ET%E6%89%93%E6%9D%BF%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95(%E4%BA%8C)/image-20240821212632906.png" alt="image-20240821212632906"></td>
+<td align="center">贴边</td>
+<td align="left">框选参与贴边操作的要素，右键结束。按住左键拖动贴边线或直接输入贴边宽度。</td>
+</tr>
+<tr>
+<td align="center">53</td>
+<td align="center"><img src="/../img/ET%E6%89%93%E6%9D%BF%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95(%E4%BA%8C)/image-20240821212637719.png" alt="image-20240821212637719"></td>
+<td align="center">明线</td>
+<td align="left">先输入数值，左键点选参考线，左键点选明线方向。</td>
+</tr>
+<tr>
+<td align="center">54</td>
+<td align="center"><img src="/../img/ET%E6%89%93%E6%9D%BF%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95(%E4%BA%8C)/image-20240821212642586.png" alt="image-20240821212642586"></td>
+<td align="center">波浪线</td>
+<td align="left">左键点选基线的起点，然后点选终点，左键点选波浪线的位置（此点距基线的距离可决定波浪线的浪高）。</td>
+</tr>
+<tr>
+<td align="center">55</td>
+<td align="center"><img src="/../img/ET%E6%89%93%E6%9D%BF%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95(%E4%BA%8C)/image-20240821212646386.png" alt="image-20240821212646386"></td>
+<td align="center">衣褶</td>
+<td align="left">先输入褶量，左键框选参与做褶的要素，右键结束。从固定侧开始依次点选褶线的上端，右键结束。左键点选衣褶的倒向侧，绿色显示时可修改数值，点左键进行预览，右键结束。</td>
+</tr>
+<tr>
+<td align="center">56</td>
+<td align="center"><img src="/../img/ET%E6%89%93%E6%9D%BF%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95(%E4%BA%8C)/image-20240821212650743.png" alt="image-20240821212650743"></td>
+<td align="center">两点相似</td>
+<td align="left">点选或框选参考要素的起端，然后指定第一点与参考要素的参考点对应，再指定第二点，按住SHIFT键可以同时删除原要素。</td>
+</tr>
+<tr>
+<td align="center">57</td>
+<td align="center"><img src="/../img/ET%E6%89%93%E6%9D%BF%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95(%E4%BA%8C)/image-20240821212655447.png" alt="image-20240821212655447"></td>
+<td align="center">局部调整</td>
+<td align="left">在一条或多条要素上指示调整要素的固定点，右键结束（右键位置要靠近调整侧的端点），在对话框中输入移动量，点上、下、左、右键移动，按确定。</td>
+</tr>
+<tr>
+<td align="center">58</td>
+<td align="center"><img src="/../img/ET%E6%89%93%E6%9D%BF%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95(%E4%BA%8C)/image-20240821212729360.png" alt="image-20240821212729360"></td>
+<td align="center">删除</td>
+<td align="left">选择被删除对象，按右键确认。</td>
+</tr>
+<tr>
+<td align="center">59</td>
+<td align="center"><img src="/../img/ET%E6%89%93%E6%9D%BF%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95(%E4%BA%8C)/image-20240821212752199.png" alt="image-20240821212752199"></td>
+<td align="center">平移</td>
+<td align="left">选择平移对象，按右键确认。拖动或采用方向键平移目标对象到指定位置，按下CTRL可进行移动拷贝。</td>
+</tr>
+<tr>
+<td align="center">60</td>
+<td align="center"><img src="/../img/ET%E6%89%93%E6%9D%BF%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95(%E4%BA%8C)/image-20240821212820748.png" alt="image-20240821212820748"></td>
+<td align="center">水平垂直补正</td>
+<td align="left">选择所有参与的要素，按右键结束选择。选择补正参考要素，按SHIFT键为水平补正，否则为垂直补正。</td>
+</tr>
+<tr>
+<td align="center">61</td>
+<td align="center"><img src="/../img/ET%E6%89%93%E6%9D%BF%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95(%E4%BA%8C)/image-20240821212845187.png" alt="image-20240821212845187"></td>
+<td align="center">水平垂直镜像</td>
+<td align="left">选择镜像要素，按右键结束选择，作出镜像轴，按CTRL可进行复制。</td>
+</tr>
+<tr>
+<td align="center">62</td>
+<td align="center"><img src="/../img/ET%E6%89%93%E6%9D%BF%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95(%E4%BA%8C)/image-20240821212906584.png" alt="image-20240821212906584"></td>
+<td align="center">要素镜像</td>
+<td align="left">选择镜像要素，按右键结束选择，指定镜像轴要素，按CTRL可进行镜像复制。</td>
+</tr>
+</tbody></table>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="http://somolll.github.io">听风吟</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="http://somolll.github.io/2024/10/06/ET%E6%89%93%E6%9D%BF%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95(%E4%BA%8C)/">http://somolll.github.io/2024/10/06/ET%E6%89%93%E6%9D%BF%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95(%E4%BA%8C)/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://somolll.github.io" target="_blank">清风</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E6%9C%8D%E8%A3%85%E5%88%B6%E7%89%88/">服装制版</a></div><div class="post_share"><div class="social-share" data-image="/img/avatar.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2024/10/06/ET%E6%89%93%E6%9D%BF%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95(%E4%B8%80)/" title="ET打板工具使用方法(一)"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">ET打板工具使用方法(一)</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2024/09/20/%E6%9C%8D%E8%A3%85%E5%88%B6%E7%89%88%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%85%A5%E9%97%A8/" title="服装制版基础知识入门"><div class="cover" style="background: var(--default-bg-color)"></div><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-09-20</div><div class="title">服装制版基础知识入门</div></div></a></div><div><a href="/2024/10/06/ET%E6%89%93%E6%9D%BF%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95(%E4%B8%80)/" title="ET打板工具使用方法(一)"><div class="cover" style="background: var(--default-bg-color)"></div><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-10-06</div><div class="title">ET打板工具使用方法(一)</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">听风吟</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">7</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">4</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">飒飒秋雨中，浅浅石溜泻。<br>跳波自相溅，白鹭惊复下。</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/10/06/ET%E6%89%93%E6%9D%BF%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95(%E4%BA%8C)/" title="ET打板工具使用方法(二)">ET打板工具使用方法(二)</a><time datetime="2024-10-06T03:53:22.000Z" title="发表于 2024-10-06 11:53:22">2024-10-06</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/10/06/ET%E6%89%93%E6%9D%BF%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95(%E4%B8%80)/" title="ET打板工具使用方法(一)">ET打板工具使用方法(一)</a><time datetime="2024-10-06T03:42:12.000Z" title="发表于 2024-10-06 11:42:12">2024-10-06</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/09/20/%E6%9C%8D%E8%A3%85%E5%88%B6%E7%89%88%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%85%A5%E9%97%A8/" title="服装制版基础知识入门">服装制版基础知识入门</a><time datetime="2024-09-20T07:41:18.000Z" title="发表于 2024-09-20 15:41:18">2024-09-20</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/09/04/Windows%E7%B3%BB%E7%BB%9F%E4%B8%8ANodeJS%E5%AE%89%E8%A3%85%E5%8F%8A%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/" title="Windows系统上Nodejs安装及环境配置图文教程">Windows系统上Nodejs安装及环境配置图文教程</a><time datetime="2024-09-04T11:37:00.000Z" title="发表于 2024-09-04 19:37:00">2024-09-04</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/09/04/Windows%E7%B3%BB%E7%BB%9F%E4%B8%8AGit%E8%AF%A6%E7%BB%86%E5%9B%BE%E6%96%87%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/" title="Windows系统上Git详细图文安装及使用教程">Windows系统上Git详细图文安装及使用教程</a><time datetime="2024-09-04T10:34:57.000Z" title="发表于 2024-09-04 18:34:57">2024-09-04</time></div></div></div></div></div></div></main><footer id="footer" style="background: transparent"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By 听风吟</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=4.13.0"></script></div></div></body></html>
